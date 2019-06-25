@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+body {
+  background-color: #c36434;
+  /*background: url('img/RG.jpg') no-repeat 0 0;*//**/
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,4 +33,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.scoreBoard {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+td {
+  text-transform: uppercase;
+  color: #edfbf7;
+  font-weight: bold;
+  font-family: Verdana;
+  padding: 10px;
+}
+
+.nom {
+  padding-left: 15px;
+  width: 150px;
+  display: inline-block;
+  background-color: #0b513c;
+  cursor: pointer;
+}
+
+.set {
+  display: none;
+}
+
+.setEnCours {
+  background-color: #fefefd;
+  color: #1b1b1b;
+  margin-left: 5px;
+  border-left: 1px solid #c36434;
+  text-align: center;
+}
+
+.jeuEnCours {
+  background-color: #fefefd;
+  color: #9d533d;
+  margin-left: 5px;
+  border-left: 1px solid #c36434;
+  text-align: center;
+}
+
+.setTerminé {
+  background-color: #0b513c;
+}
+
+.partieTerminé {
+  display: flex;
+  background-color: #0b513c;
+  color: #edfbf7;
+  width: 310px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  border: 1px solid #edfbf7;
+}
+
+.scoreTieBreak {
+  font-size: xx-small;
+  display: inline;
+  padding-left: 4px;
+  padding-top: 4px;
+}
+
+.setPerdu {
+  color: #56907f;
+  display: inline;
+}
+
+.setGagné {
+  display: inline;
 }
